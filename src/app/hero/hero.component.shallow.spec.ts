@@ -29,9 +29,9 @@ describe("HeroComponent shallow test", () => {
 
     fixture.detectChanges();
 
-    expect(fixture.debugElement.query(By.css('a')).nativeElement.textContent).toEqual('John');
+    //expect(fixture.debugElement.query(By.css('a')).nativeElement.textContent).toEqual('John');
 
-    //expect(fixture.nativeElement.querySelector('a').textContent).toContain('John');
+    expect(fixture.nativeElement.querySelector('a').textContent).toContain('John');
   })
 
 
